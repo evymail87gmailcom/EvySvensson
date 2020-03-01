@@ -1,9 +1,9 @@
-﻿body
-{
-    background-color:blue;
-    
+﻿body {
+    background-color: #003300
 }
-h1{
-    color:black;
-    
+h1 {
+    margin-top:0;
+    color: black;
+    background-color: #80ff80;
 }
+
