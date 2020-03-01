@@ -50,7 +50,8 @@ function menu() {
  
     //create and add a menubutton to the menudiv
     var menubutton = document.createElement("BUTTON");
-    
+  
+ 
     menubutton.style.backgroundColor = "#4CAF50";
     menubutton.style.color = "white";
     menubutton.style.padding = "16px";
@@ -58,14 +59,30 @@ function menu() {
     menubutton.style.border = "none";
 
 
+
+
     //add some text to the button
     menubutton.innerText = "my menu goes here";
 
     menu.appendChild(menubutton);
+    menubutton.onmouseout = function () { noHover() };
+    menubutton.onmouseover = function () { hover() };
 
+    function noHover() {
+        link.style.backgroundColor = "inherit";
+        dropDownContent.style.display = "none";
+        menubutton.style.backgroundColor = "#4CAF50";
+    }
+    function hover() {
+
+        //link.style.backgroundColor = "#3e8e41";
+        dropDownContent.style.display = "block";
+        menubutton.style.backgroundColor = "#3e8e41";
+
+    }
     //add another div that will hold the links
     var dropDownContent = document.createElement("DIV");
-    
+    dropDownContent.style.display = "none";
     dropDownContent.style.width = "inherit";
     dropDownContent.style.height = "170px";
     dropDownContent.style.backgroundColor = "#3e8e41";
@@ -97,20 +114,7 @@ function menu() {
         dropDownContent.appendChild(list);
     }
 
-    function hover() {
 
-        link.style.backgroundColor = "#3e8e41";
-        dropDownContent.style.display = "block";
-        menubutton.style.backgroundColor = "#3e8e41";
-
-    }
-    function noHover() {
-        link.style.backgroundColor = "inherit";
-        dropDownContent.style.display = "none";
-        menubutton.style.backgroundColor = "#4CAF50";
-    }
-    menubutton.onmouseover = function () { hover() };
-    menubutton.onmouseout = function () { noHover()};
 }
 
 
