@@ -48,15 +48,15 @@ function menu() {
 
     document.body.appendChild(menu);
  
-    //create and add a menubutton to the menudiv
-    var menubutton = document.createElement("BUTTON");
+         //create and add a menubutton to the menudiv
+         var menubutton = document.createElement("BUTTON");
   
- 
-    menubutton.style.backgroundColor = "#4CAF50";
-    menubutton.style.color = "white";
-    menubutton.style.padding = "16px";
-    menubutton.style.fontSize = "16px";
-    menubutton.style.border = "none";
+        //Style the button
+         menubutton.style.backgroundColor = "#4CAF50";
+         menubutton.style.color = "white";
+         menubutton.style.padding = "16px";
+         menubutton.style.fontSize = "16px";
+         menubutton.style.border = "none";
 
 
 
@@ -68,18 +68,18 @@ function menu() {
     menubutton.onmouseout = function () { noHover() };
     menubutton.onmouseover = function () { hover() };
 
-    function noHover() {
+         function noHover() {
         link.style.backgroundColor = "inherit";
         dropDownContent.style.display = "none";
         menubutton.style.backgroundColor = "#4CAF50";
-    }
-    function hover() {
+        }
+          function hover() {
 
-        //link.style.backgroundColor = "#3e8e41";
-        dropDownContent.style.display = "block";
-        menubutton.style.backgroundColor = "#3e8e41";
+         //link.style.backgroundColor = "#3e8e41";
+            dropDownContent.style.display = "block";
+              menubutton.style.backgroundColor = "#3e8e41";
 
-    }
+         }
     //add another div that will hold the links
     var dropDownContent = document.createElement("DIV");
     dropDownContent.style.display = "none";
@@ -101,7 +101,8 @@ function menu() {
     ];
 
     for (var i = 0; i < links.length; i++) {
-    var list = document.createElement("LI");
+        var list = document.createElement("LI");
+        list.style.listStyle = "none";
     var link = document.createElement("A");
         link.style.color = "black";
         link.style.padding = "12px 16px";
@@ -119,7 +120,10 @@ function menu() {
 
 
 
+function addcenter() {
+    var midDiv = document.createElement("DIV");
 
+}
 
   
 
