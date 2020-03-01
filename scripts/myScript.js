@@ -1,4 +1,9 @@
 // JavaScript source code
 
-
-document.createElement("<h1>HelloWorld</h1>");
+function myFunction() {
+    var h = document.createElement("H1");
+    var t = document.createTextNode("Hello World");
+    h.appendChild(t);
+    document.body.appendChild(h);
+}
+myFunction();
