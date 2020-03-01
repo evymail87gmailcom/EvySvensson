@@ -37,7 +37,7 @@ function addH6(_text) {
     h.appendChild(t);
     document.body.appendChild(h);
 }
-var myHeader = addH1("Headertext here");
+addH1("Headertext here");
 
 
 function menu() {
@@ -50,7 +50,7 @@ function menu() {
  
     //create and add a menubutton to the menudiv
     var menubutton = document.createElement("BUTTON");
-
+    
     menubutton.style.backgroundColor = "#4CAF50";
     menubutton.style.color = "white";
     menubutton.style.padding = "16px";
@@ -65,11 +65,12 @@ function menu() {
 
     //add another div that will hold the links
     var dropDownContent = document.createElement("DIV");
-    dropDownContent.style.display = "none";
-    dropDownContent.style.position = "absolute";
-    dropDownContent.style.backgroundColor = "#f1f1f1";
+    
+    dropDownContent.style.width = "inherit";
+    dropDownContent.style.height = "170px";
+    dropDownContent.style.backgroundColor = "#3e8e41";
     dropDownContent.style.minWidth = "160px";
-    dropDownContent.style.boxShadow = "0px 8px 16px 0px rgba(0,0,0,0.2)";
+  //  dropDownContent.style.boxShadow = "0px 8px 16px 0px rgba(0,0,0,0.2)";
     dropDownContent.style.zIndex = "1";
 
     //adds the dropdowncontent-div to the menubutton
@@ -98,7 +99,7 @@ function menu() {
 
     function hover() {
 
-        link.style.backgroundColor = "#ddd";
+        link.style.backgroundColor = "#3e8e41";
         dropDownContent.style.display = "block";
         menubutton.style.backgroundColor = "#3e8e41";
 
