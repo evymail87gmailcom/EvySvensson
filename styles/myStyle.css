@@ -1,22 +1,23 @@
-﻿body {
+﻿/**/
+body {
     background-image: url("../images/forest-bike-bulls-100582.jpg");
     background-attachment: fixed;
     background-size: 100%100%;
 }
-h1 {
+/**/
+.header {
     margin-top:0;
     text-align:center;
     color: black;
     background-color: #80ff80;
 }
 
-
+/**/
 .menu {
-    
     position: relative;
     display: inline-block;
 }
-
+/**/
 .menubutton {
     background-color: #4CAF50;
     color: white;
@@ -24,7 +25,7 @@ h1 {
     font-size: 16px;
     border: none;
 }
-
+/**/
 .dropDownContent {
     display: none;
     width: inherit;
@@ -35,16 +36,18 @@ h1 {
     z-Index: 1;
     
 }
-
+/**/
 .list{
     list-style:none;
 }
+/**/
 .link {
     color: black;
     padding: 12px 16px;
     text-Decoration: none;
     display:block;
 }
+/**/
 .lowDiv {
     
     text-align: center;
@@ -52,6 +55,7 @@ h1 {
     background-color: #80ff80;
     margin-bottom:20px;
 }
+/**/
 .footer {
     
     color: white;

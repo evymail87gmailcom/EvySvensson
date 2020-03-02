@@ -1,54 +1,28 @@
 // JavaScript source code
-
-function addH1(_text) {
+    //Give the function a name that says what it does
+function addHeader() {
+    //Create element and assign a class name to easier style it in the css-file
     var h = document.createElement("H1");
-    var t = document.createTextNode(_text);
+    h.className = "header";
+    //Add a text and add it to the previous element 
+    var t = document.createTextNode("Here is my header");
     h.appendChild(t);
+    //Attach the element to the html-document
     document.body.appendChild(h);
 }
-
-function addH2(_text) {
-    var h = document.createElement("H2");
-    var t = document.createTextNode(_text);
-    h.appendChild(t);
-    document.body.appendChild(h);
-}
-function addH3(_text) {
-    var h = document.createElement("H3");
-    var t = document.createTextNode(_text);
-    h.appendChild(t);
-    document.body.appendChild(h);
-}
-function addH4(_text) {
-    var h = document.createElement("H4");
-    var t = document.createTextNode(_text);
-    h.appendChild(t);
-    document.body.appendChild(h);
-}
-function addH5(_text) {
-    var h = document.createElement("H5");
-    var t = document.createTextNode(_text);
-    h.appendChild(t);
-    document.body.appendChild(h);
-}
-function addH6(_text) {
-    var h = document.createElement("H6");
-    var t = document.createTextNode(_text);
-    h.appendChild(t);
-    document.body.appendChild(h);
-}
-addH1("Headertext here");
+//Invoke function
+addHeader();
 
 
 function menu() {
-    //create the div for the menu
+    //Create element and assign a class name to easier style it in the css-file
     var menu = document.createElement("DIV");
         menu.className = "menu";
-
+     //Attach the element to the html-document
     document.body.appendChild(menu);
  
      //create and add a menubutton to the menudiv
-     var menubutton = document.createElement("BUTTON");
+            var menubutton = document.createElement("BUTTON");
          menubutton.className = "menubutton";
         
     //add some text to the button
