@@ -43,24 +43,14 @@ addH1("Headertext here");
 function menu() {
     //create the div for the menu
     var menu = document.createElement("DIV");
-    menu.style.position = "relative";
-    menu.style.display = "inline-block";
+        menu.className = "menu";
 
     document.body.appendChild(menu);
  
-         //create and add a menubutton to the menudiv
-         var menubutton = document.createElement("BUTTON");
-  
-        //Style the button
-         menubutton.style.backgroundColor = "#4CAF50";
-         menubutton.style.color = "white";
-         menubutton.style.padding = "16px";
-         menubutton.style.fontSize = "16px";
-         menubutton.style.border = "none";
-
-
-
-
+     //create and add a menubutton to the menudiv
+     var menubutton = document.createElement("BUTTON");
+         menubutton.className = "menubutton";
+        
     //add some text to the button
     menubutton.innerText = "my menu goes here";
 
@@ -75,20 +65,15 @@ function menu() {
         }
           function hover() {
 
-         //link.style.backgroundColor = "#3e8e41";
+        
             dropDownContent.style.display = "block";
               menubutton.style.backgroundColor = "#3e8e41";
 
          }
     //add another div that will hold the links
     var dropDownContent = document.createElement("DIV");
-    dropDownContent.style.display = "none";
-    dropDownContent.style.width = "inherit";
-    dropDownContent.style.height = "170px";
-    dropDownContent.style.backgroundColor = "#3e8e41";
-    dropDownContent.style.minWidth = "160px";
-  //  dropDownContent.style.boxShadow = "0px 8px 16px 0px rgba(0,0,0,0.2)";
-    dropDownContent.style.zIndex = "1";
+    dropDownContent.className = "dropDownContent";
+
 
     //adds the dropdowncontent-div to the menubutton
     menubutton.appendChild(dropDownContent);
@@ -102,12 +87,11 @@ function menu() {
 
     for (var i = 0; i < links.length; i++) {
         var list = document.createElement("LI");
-        list.style.listStyle = "none";
-    var link = document.createElement("A");
-        link.style.color = "black";
-        link.style.padding = "12px 16px";
-        link.style.textDecoration = "none";
-        link.style.display = "block";
+        list.className = "list";
+        
+        var link = document.createElement("A");
+        link.className = "link";
+       
         
         link.href = links[i][1];
         link.appendChild(document.createTextNode(links[i][0]));
@@ -120,15 +104,21 @@ function menu() {
 
 
 
-function addcenter() {
-    var midDiv = document.createElement("DIV");
-
+function addfooter() {
+    var lowDiv = document.createElement("DIV");
+    lowDiv.className = "lowDiv";
+    document.body.appendChild(lowDiv);
+    var h = document.createElement("H4");
+    h.className = "footer";
+    lowDiv.appendChild(h);
+    var t=document.createTextNode("here is my footer!!")
+    h.appendChild(t);
+    
 }
 
   
 
-function addimage() {
 
-}
 
 menu();
+addfooter();
