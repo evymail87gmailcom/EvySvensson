@@ -2,6 +2,7 @@
 body {
     background-image: url("../images/forest-bike-bulls-100582.jpg");
     background-attachment: fixed;
+    backgound-repeat:no-repeat;
     background-size: contain;
 }
 /**/
