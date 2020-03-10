@@ -2,7 +2,7 @@
 body {
     background-image: url("../images/forest-bike-bulls-100582.jpg");
     background-attachment: fixed;
-    background-size: 100%100%;
+    background-size: contain;
 }
 /**/
 .header {
