@@ -91,8 +91,60 @@ function addfooter() {
 }
 
   
+function addIdCard() {
 
+    var card = document.createElement("DIV");
+    card.className = "card";
+    document.body.appendChild(card);
+  
+    var profileImage = document.createElement("IMG");
+    profileImage.className = "profileImage";
+    profileImage.setAttribute("src", "images/forest-bike-bulls-100582.jpg");
+    card.appendChild(profileImage);
+
+    var myName = document.createElement("H1");
+    myName.className = "myName";
+    card.appendChild(myName);
+
+    var myTextName = document.createTextNode("Evy Svensson");
+    myName.appendChild(myTextName);
+
+
+    var title = document.createElement("p");
+    title.className = "title";
+    card.appendChild(title);
+    var titleText = document.createTextNode("Student Systemdeveloper IoT");
+    title.appendChild(titleText);
+
+    var linkedIn = document.createElement("A");
+    linkedIn.className = "linkedInLink";
+    linkedIn.setAttribute("href","https://www.linkedin.com/in/evy-svensson");
+    card.appendChild(linkedIn);
+
+    var linkedInImage = document.createElement("img");
+    linkedInImage.className = "linkedInImage";
+    linkedInImage.src = "images/whitelink.png";
+    linkedIn.appendChild(linkedInImage);
+
+
+
+
+
+
+    var button = document.createElement("button");
+    button.className = "profileButton";
+    card.appendChild(button);
+    var buttonText = document.createTextNode("Contact");
+    button.appendChild(buttonText);
+
+
+
+
+
+
+}
 
 
 menu();
+addIdCard();
 addfooter();

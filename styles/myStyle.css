@@ -1,9 +1,11 @@
 ﻿/**/
+
 body {
-    background-image: url("../images/forest-bike-bulls-100582.jpg");
-   
-    backgound-repeat: no-repeat;
-    background-size: contain;
+    background-image: url("../images/green-pine-tree-leaves-192136.jpg");
+  
+    background-color: #cccccc;
+    background-repeat: repeat;
+    background-size: cover;
 }
 /**/
 .header {
@@ -66,4 +68,49 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+   
+    font-family: arial;
+}
+.profileImage {
+    width: 100%;
+}
+.title {
+    text-align: center;
+    color: floralwhite;
+    font-size: 18px;
+}
+.profileButton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.myName{
+    text-align:center;
+    color: white;
+}
+.linkedInImage {
+    left:0px;
+    width:25px;
+    height:30px;
+    background-color:white;
+    text-align:left;
+    float:left;
+    padding:1px;
+    margin-bottom:10px;
+    border-color: black;
+    border-radius:6px;
+    
 }
