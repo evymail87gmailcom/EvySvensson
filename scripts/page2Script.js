@@ -46,7 +46,7 @@ function aboutMeText() {
     var para = document.createElement("p");
     para.className = "aboutMeParagraph";
     textDiv.appendChild(para);
-    var textNode = document.createTextNode("This is a section about me.");
+    var textNode = document.createTextNode("This page is under construction.");
     para.appendChild(textNode);
 }
 
